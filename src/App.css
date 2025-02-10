@@ -1,0 +1,54 @@
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+  font-family: sans-serif; /* Example styling */
+  margin: 0; /* Remove default margins */
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #eee;
+}
+
+.app-container {
+  padding: 20px; /* Add some padding around content */
+}
+
+nav {
+  background-color: #f0f0f0; /* Light mode nav background */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items to left and right */
+  align-items: center; /* Vertically center items */
+}
+
+body.dark-mode nav {
+  background-color: #444; /* Dark mode nav background */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from body */
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px; /* Space between sections */
+  border-bottom: 1px solid #ddd; /* Separator line in light mode */
+}
+
+body.dark-mode section {
+  border-bottom-color: #666; /* Separator line in dark mode */
+}
